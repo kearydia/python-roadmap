@@ -15,3 +15,22 @@ RAG
 Agent
 
 记录规则：每天学习结束，提交一次。
+
+# FastAPI Day01
+
+学习内容：
+
+- FastAPI基础
+- 创建POST接口
+- Uvicorn启动服务
+- Swagger测试接口
+
+接口：
+
+POST /chat
+
+返回：
+
+{
+ "answer":"你的问题已经收到"
+}
