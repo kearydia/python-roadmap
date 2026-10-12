@@ -1,0 +1,21 @@
+01-FastAPI-chat-demo
+
+├── script.py
+├── README.md
+└── test-record.md
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class ChatRequest(BaseModel):
+    question: str
+
+
+@app.post("/chat")
+def chat(request: ChatRequest):
+    return {
+        "question": request.question
+    }
